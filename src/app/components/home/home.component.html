@@ -1,3 +1,7 @@
 <div class="container">
-  <p>This is the HomeComponent!</p>
+  <p>Here is a list of property names and property values from the items collection inside the Firebase Database</p>
+
+  <ul>
+    <li *ngFor="let item of items | async">{{ item.$key }} : {{ item.$value }}</li>
+  </ul>
 </div><!-- /.container -->
