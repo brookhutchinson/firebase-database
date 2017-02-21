@@ -10,7 +10,11 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor(private af: AngularFire) {
+  // define properties
+  private items: FirebaseListObservable<any[]>;
 
+  constructor(private af: AngularFire) {
+    // use AngularFire Service to request data from Firebase Database and store data inside FirebaseListObservable
+    this.items = af.database.list('/items');
   }
 }
