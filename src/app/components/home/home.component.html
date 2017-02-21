@@ -1,5 +1,5 @@
 <div class="container">
-  <p>Here is a list of property names and property values from the items collection inside the Firebase Database</p>
+  <p>Here is a list of property names and property values from the items collection inside the Firebase Real-Time NoSQL Database</p>
 
   <ul>
     <li *ngFor="let item of items | async">{{ item.$key }} : {{ item.$value }}</li>

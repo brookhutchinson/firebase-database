@@ -11,6 +11,6 @@ export class NavbarComponent {
 
   constructor() {
     // set properties
-    this.logoText = 'Firebase Database'
+    this.logoText = 'Firebase Real-Time NoSQL Database'
   }
 }
